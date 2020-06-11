@@ -1,0 +1,40 @@
+
+/* General Style for all Devices */
+
+body {
+    background-color: #0c122c;
+    color: #fffffe;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sections {
+    display: grid;
+    padding: 15%;
+    justify-content: center;
+    background-color: #0c1231;
+    border-radius: 10px;
+    border: solid #0c1231;
+    border-top-right-radius: 80px 50px;
+}
+
+.remainder {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 150px;
+    height: 100px;
+    z-index: 99;
+    background-color: #fffffe;
+    color: #0c1231;
+    border: solid 5px #0c1231;
+    border-radius: 10px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
