@@ -1,98 +1,113 @@
-
-/* General Style for all Devices */
+/* General Styles */
 
 body {
-    background-color: #0c122c;
-    background-image: url(./images/bg-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fffffe;
-    font-family: 'Raleway', sans-serif;
-}
-
-#content {
-    display: grid;
-    justify-content: center;
-    
-}
-
-.sections {
-    display: grid;
-    width: 500px;
-    padding: 15%;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    background-color: #1d2c67;
-    border-radius: 10px;
-    colog: #fffffe;
+    background-color: hsl(229, 57%, 11%);
+    color: #fffff0;
+    font-family: 'Raleway', sans-serif; 
 }
 
 #header {
-    border-top-right-radius: 150px 150px;
-    margin-top: 20%;
-    margin-bottom: 3%;
-    justify-content: left;
+    margin: 0;
+    height: 201px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10%;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px 80px 10px 10px;
+}
+
+#logo {
+    margin: 15px;
 }
 
 #menu {
-    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
 }
-#menu img {
-    background-color: #0c1231;
-    padding: 10px;
-    height: 20px;
-    width: 25px;
+
+.imagebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    background-color: hsl(229, 57%, 11%);
     border-radius: 10px;
+}
+
+
+#datasection {
+    display: grid;
+    grid-template-columns: 50px repeat(6, 1fr) 18px repeat(3, 1fr) 50px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border-radius: 10px;
+    background-color: hsl(228, 56%, 26%);
+    text-align: left;
+}
+
+#datatext {
+    grid-area: 2 / 2 / 3 / 12;
+}
+
+#markerstart {
+    grid-area: 4 / 2 / 5 / 3;
+    font-size: .75em;
+}
+
+#markerend {
+    grid-area: 4 / 11 / 5 / 12;
+    font-size: .75em;
+}
+
+#usagebar {
+    height: 20px;
+    border-radius: 10px;
+    background-color: hsl(229, 57%, 11%);
+    grid-area: 3 / 2 / 4 / 12;
+}
+
+#currentusage {
+    height: 18px;
+    grid-area: 3 / 2 / 4 / 9;
+    margin-top: 1px;
+    margin-left: 3px;
+    border-radius: 10px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%))
+}
+
+#endmarker {
+    grid-area: 3 / 8 / 4 / 9;
+    height: 15px;
+    width: 15px;
+    margin-top: 2px;
+    margin-left: 1px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
 }
 
 #bottombox {
-    display: grid;
-    width: 500px;
-    padding: 15%;
-    margin-top: -25%;
-    margin-bottom: 10%;
-    align-content: center;
+    display: flex;
     justify-content: center;
-}
-
-.remainderbox {
-    justify-content: center;
-}
-
-.remainder {
-    justify-content: center;
-    padding: 1%;
-    width: 200px;
-    z-index: 99;
-    background-color: #fffffe;
-    color: #0c1231;
-    border: solid 2px #0c1231;
+    align-items: center;
     border-radius: 10px;
-    text-transform: uppercase;
-    text-align: center;
+    background-color: #fffff0;
+    color: hsl(229, 57%, 11%);
 }
 
-.number {
-    font-size: 2.5em;
-    font-weight: 700;
+#bottombox span {
+    font-size: 1.5em;
 }
-
-meter {
-    width: 500px;
-    height: 25px;
-}
-
-.styled meter {
-    
-}
-
- 
 
 .attribution { 
+    align-self: flex-end;
     font-size: 11px; 
     text-align: center; 
 }
+
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 

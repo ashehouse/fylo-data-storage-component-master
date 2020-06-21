@@ -1,0 +1,35 @@
+/* For Desktop Screens */
+
+@media (min-width: 769px){
+
+    #content {
+        display: grid;
+        grid-template-rows: 200px repeat(4, 50px) 200px;
+        grid-template-columns: 1fr 2fr repeat(4, 1fr);
+        grid-gap: 0 15px;
+    }
+
+    #bottombox {
+        grid-area: 2 / 5 / 4 / 6;
+        height: 80%;
+        width: 75%;
+    }
+
+    #header {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    #datasection {
+        grid-area: 3 / 3 / 6 / 6;
+    }
+
+    #triangle {
+        grid-area: 1 / 11 / 3 / 12;
+        margin-top: 15px;
+        width: 0px;
+        height: 0px;
+        border-top: 50px solid #fffff0;
+        border-left: 50px solid transparent;
+      }
+}

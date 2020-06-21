@@ -11,6 +11,8 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/stylemobile.css">
+  <link rel="stylesheet" type="text/css" href="desktop.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
@@ -21,17 +23,28 @@
         <img src="/images/logo.svg">
       </div>
       <div id="menu">
-        <img src="/images/icon-document.svg" class="actionimg">
-        <img src="/images/icon-folder.svg" class="actionimg">
-        <img src="/images/icon-upload.svg" class="actionimg">
+        <div class="imagebox">
+          <img src="/images/icon-document.svg" class="actionimg">
+        </div>
+        <div class="imagebox">
+          <img src="/images/icon-folder.svg" class="actionimg">
+        </div>
+        <div class="imagebox">
+          <img src="/images/icon-upload.svg" class="actionimg">
+        </div>
       </div>
     </div>
   <div id="datasection" class="sections">
     <div id="datatext">
-      <p>You've used 815 GB of your storage</p>
+      <p>You've used <span>815 GB</span> of your storage</p>
     </div>
-      <meter id="usagebar" class="styled" value="815" min="0" max="1000">2 out of 10</meter><br>
-    </div>
+      <div id="usagebar"></div>
+      <div id="currentusage"></div>
+      <div id="endmarker"></div>
+    <div id="markerstart">0 GB</div>
+    <div id="markerend">1000 GB</div>
+    <div id="triangle"></div>
+  </div>
   <div id="bottombox">
     <div id="remainderbox" class="remainder">
       <div id="remaindertext">
