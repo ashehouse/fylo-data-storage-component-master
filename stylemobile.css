@@ -1,5 +1,48 @@
 /* Stylesheet for mobile browsers */
 
-@media (max-width: 479px) {
-    
+@media (max-width: 768px) {
+
+    body {
+        font-size: .75em;
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    #content {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+        padding: 10px;
+    }
+
+    #header {
+       margin: 10% 5% 2% 5%;
+    }
+
+    #datasection {
+        height: 196px;
+        margin: 2% 5% 5% 5%;
+        grid-template-rows: 35px 50px 25px 10px 1fr;
+        text-align: center;
+    }
+
+    #markerend {
+        grid-column-start: 10;
+    }
+
+    #bottombox {
+        position: relative;
+        top: -50px;
+        align-self: center;
+        width: 179px;
+        height: 72px;
+        grid-area: 3 / 2 / 6 / 4;
+        padding: 10px;
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+
 }
